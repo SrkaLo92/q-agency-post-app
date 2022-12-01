@@ -1,0 +1,45 @@
+.main-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero {
+  width: 100%;
+  margin: 0 auto;
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.235em;
+    text-transform: uppercase;
+    color: #199B84;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 175%;
+    color: #B1D3FF;
+  }
+}
+
+.buttons-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  padding: 10px 0;
+}

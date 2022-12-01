@@ -1,0 +1,11 @@
+<div class="main-wrapper">
+  <div class="hero">
+    <p>Welcome</p>
+    <h1>Welcome to my post app</h1>
+    <h4>My name is Srdjan Marinkovic and I am a software developer</h4>
+    <div class="buttons-wrap">
+      <app-button (buttonClicked)="onNavigateToPosts($event)" [buttonData]="postsButton"></app-button>
+      <app-button (buttonClicked)="onNavigateToAbout($event)" [buttonData]="aboutButton"></app-button>
+    </div>
+  </div>
+</div>

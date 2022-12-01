@@ -1,0 +1,46 @@
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 0 10px;
+
+}
+
+img {
+  height: 10vh;
+}
+
+.nav-links {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.active {
+  background-color: #556EDB;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}

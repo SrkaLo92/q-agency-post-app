@@ -1,0 +1,16 @@
+<div class="title-wrapper">
+  <h2>Posts number {{post?.id}}</h2>
+</div>
+
+<h1>{{post?.title | titlecase}}</h1>
+<p>{{post?.body | titlecase}}</p>
+<h4>Comments: </h4>
+<ul>
+  <li *ngFor="let comment of comments">
+    <p><b>Email:</b> {{comment.email}}</p>
+    <p><b>Name:</b> {{comment.name | titlecase}}</p>
+    <p><b>Comment:</b> {{comment.body | titlecase}}</p>
+  </li>
+</ul>
+
+<!-- <app-preloader *ngIf="this.preloader"></app-preloader> -->

@@ -1,0 +1,46 @@
+.post-wrapper {
+  width: 100%;
+  min-height: 250px;
+  background: transparent;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: grid;
+
+  .post {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 175%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 29px;
+    letter-spacing: 0.235em;
+    color: #199B84;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
