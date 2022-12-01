@@ -1,17 +1,26 @@
 <div class="post-wrapper">
   <div class="post" *ngIf="!this.commentsOpened">
-    <h4 (click)="onButtonClicked()">{{postData.title | titlecase}}</h4>
-    <p>{{user?.name | titlecase}}</p>
+    <h4 (click)="onButtonClicked()">{{ postData.title | titlecase }}</h4>
+    <p>{{ user?.name | titlecase }}</p>
     <div class="buttons">
-      <app-button (buttonClicked)="onButtonClicked()" [buttonData]="readMoreButton"></app-button>
-      <app-button (buttonClicked)="onOpenComments()" [buttonData]="openCommentsButton"></app-button>
+      <app-button
+        (buttonClicked)="onButtonClicked()"
+        [buttonData]="readMoreButton"
+      ></app-button>
+      <app-button
+        (buttonClicked)="onOpenComments()"
+        [buttonData]="openCommentsButton"
+      ></app-button>
     </div>
   </div>
   <div *ngIf="this.commentsOpened" class="comments">
-    <app-button (buttonClicked)="onCloseComments()" [buttonData]="closeCommentsButton"></app-button>
+    <app-button
+      (buttonClicked)="onCloseComments()"
+      [buttonData]="closeCommentsButton"
+    ></app-button>
     <ul>
       <li *ngFor="let comment of comments">
-        <p>- {{comment.body}}</p>
+        <p>- {{ comment.body }}</p>
       </li>
     </ul>
   </div>

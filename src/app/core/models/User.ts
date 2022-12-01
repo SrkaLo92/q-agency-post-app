@@ -19,7 +19,7 @@ interface Address {
 
 interface Geo {
   lat: string;
-  lng: string
+  lng: string;
 }
 
 interface Company {

@@ -8,12 +8,12 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { SelectedPostComponent } from './pages/selected-post/selected-post.component';
 
 const routes: Routes = [
-  {path: '', component: MainComponent},
-  {path: 'posts', component: PostsComponent},
-  {path: 'post/:id', component: SelectedPostComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: '**', component: NotFoundComponent},
+  { path: '', component: MainComponent },
+  { path: 'posts', component: PostsComponent },
+  { path: 'post/:id', component: SelectedPostComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

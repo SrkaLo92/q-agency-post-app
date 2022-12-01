@@ -5,7 +5,7 @@ import { PostService } from 'src/app/core/services/post.service';
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+  styleUrls: ['./posts.component.scss'],
 })
 export class PostsComponent implements OnInit {
   posts: Post[] = [];
@@ -16,8 +16,7 @@ export class PostsComponent implements OnInit {
   totalPosts!: number;
   searchText = '';
 
-
-  constructor(private postService: PostService) { }
+  constructor(private postService: PostService) {}
 
   ngOnInit(): void {
     this.getPosts(this.currentPage, this.itemsPerPage);
@@ -29,20 +28,21 @@ export class PostsComponent implements OnInit {
   }
 
   getPosts(currentPage: number, itemsPerPage: number) {
-    this.postService.getPosts(currentPage, itemsPerPage).subscribe(
-      {
-        next: (response: any) => {
-          this.posts = response.body;
-          this.totalPosts = response.headers.get('X-Total-Count');
-          this.numberOfPages = [];
-          for (let i = 1; i <= Math.ceil(this.totalPosts/this.itemsPerPage); i++) {
-            this.numberOfPages.push(i);
-          }
-        },
-        complete: () => this.preloader = false,
-        error: (err) => console.log(err)
-      }
-    );
+    this.postService.getPosts(currentPage, itemsPerPage).subscribe({
+      next: (response: any) => {
+        this.posts = response.body;
+        this.totalPosts = response.headers.get('X-Total-Count');
+        this.numberOfPages = [];
+        for (
+          let i = 1;
+          i <= Math.ceil(this.totalPosts / this.itemsPerPage);
+          i++
+        ) {
+          this.numberOfPages.push(i);
+        }
+      },
+      complete: () => (this.preloader = false),
+      error: (err) => console.log(err),
+    });
   }
-
 }

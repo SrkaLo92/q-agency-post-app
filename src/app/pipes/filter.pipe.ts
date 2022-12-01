@@ -1,17 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'filter',
 })
 export class FilterPipe implements PipeTransform {
-
   /**
    * @param items
    * @param searchText
    * @returns
    */
 
-   transform(items: any[], searchText: string): any[] {
+  transform(items: any[], searchText: string): any[] {
     if (!items) {
       return [];
     }
@@ -24,5 +23,4 @@ export class FilterPipe implements PipeTransform {
       return it.title.toLocaleLowerCase().includes(searchText);
     });
   }
-
 }

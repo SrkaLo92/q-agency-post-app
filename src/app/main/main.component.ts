@@ -5,22 +5,22 @@ import { Button } from '../core/models/Button';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
   postsButton: Button = {
     text: 'Posts',
     backgroundColor: '#199B84',
-    route: 'posts'
-  }
+    route: 'posts',
+  };
 
   aboutButton: Button = {
     text: 'About me',
     backgroundColor: '#556EDB',
-    route: 'about'
-  }
+    route: 'about',
+  };
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   onNavigateToPosts(event: boolean) {
     if (event) {
@@ -33,5 +33,4 @@ export class MainComponent {
       this.router.navigate(['about']).then();
     }
   }
-
 }

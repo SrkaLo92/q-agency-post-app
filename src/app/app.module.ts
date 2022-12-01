@@ -18,7 +18,20 @@ import { ButtonComponent } from './components/button/button.component';
 import { PostComponent } from './components/post/post.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, HeaderComponent, ButtonComponent, PostsComponent, AboutComponent, PostComponent, SelectedPostComponent, PreloaderComponent, ContactComponent, FilterPipe, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    HeaderComponent,
+    ButtonComponent,
+    PostsComponent,
+    AboutComponent,
+    PostComponent,
+    SelectedPostComponent,
+    PreloaderComponent,
+    ContactComponent,
+    FilterPipe,
+    NotFoundComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
