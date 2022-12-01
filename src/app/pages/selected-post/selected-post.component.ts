@@ -12,7 +12,7 @@ import { PostService } from 'src/app/core/services/post.service';
   styleUrls: ['./selected-post.component.scss'],
 })
 export class SelectedPostComponent implements OnInit {
-  post!: Post;
+  post!: Post | null;
   comments: Comment[] = [];
 
   constructor(

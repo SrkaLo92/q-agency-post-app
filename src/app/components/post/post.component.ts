@@ -29,7 +29,7 @@ export class PostComponent implements OnInit {
     backgroundColor: 'red',
   };
 
-  user!: User;
+  user!: User | null;
   comments: Comment[] = [];
   commentsOpened: boolean = false;
 
