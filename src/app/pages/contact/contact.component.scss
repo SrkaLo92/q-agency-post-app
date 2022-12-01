@@ -1,0 +1,70 @@
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero {
+  width: 100%;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 29px;
+  letter-spacing: 0.235em;
+  color: #199b84;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 82px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 175%;
+  color: #b1d3ff;
+}
+
+.contact-info {
+  height: 30vh;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+img {
+  max-width: 70px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+i {
+  font-size: 30px;
+  color: #199B84;
+}
