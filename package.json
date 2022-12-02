@@ -7,7 +7,6 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "compodoc": "npx compodoc -p tsconfig.app.json",
     "lint": "ng lint",
     "prettier": "prettier --write \"src/app/**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
     "prepare": "husky install"
@@ -39,7 +38,6 @@
     "@angular-eslint/template-parser": "15.1.0",
     "@angular/cli": "^15.0.2",
     "@angular/compiler-cli": "^15.0.2",
-    "@compodoc/compodoc": "^1.1.19",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.28.2",
